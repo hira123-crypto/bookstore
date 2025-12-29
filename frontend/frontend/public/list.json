@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "storybook",
+    "title": "The Complete Storybook Guide",
+    "price": "00",
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/bookshelf-books-library-isolated_1284-41020.jpg"
+  },
+  {
+    "id": "2",
+    "name": "react-guide",
+    "title": "Mastering ReactJS",
+    "price": "10",
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/programming-books-illustration_1284-41130.jpg"
+  },
+  {
+    "id": "3",
+    "name": "nodejs-handbook",
+    "title": "NodeJS Handbook",
+    "price": "15",
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/learning-technology-concept-illustration_114360-4011.jpg"
+  },
+  {
+    "id": "4",
+    "name": "css-tricks",
+    "title": "CSS Tips & Tricks",
+    "price": "0",
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/stack-books-isolated_1284-41019.jpg"
+  }
+]
