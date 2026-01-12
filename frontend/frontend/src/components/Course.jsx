@@ -5,17 +5,26 @@ import { Link } from "react-router-dom";
 function Course() {
   const [book, setBook] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await fetch('/list.json');
+        // ✅ Change this to your backend API endpoint
+        const res = await fetch('http://localhost:4001/book');
+        
+        if (!res.ok) {
+          throw new Error('Failed to fetch books');
+
+        }
+        
         const data = await res.json();
         console.log("All books:", data);
         setBook(data);
         setLoading(false);
       } catch (error) {
-        console.log(error);
+        console.log("Error:", error);
+        setError(error.message);
         setLoading(false);
       }
     };
@@ -24,6 +33,10 @@ function Course() {
 
   if (loading) {
     return <div className="text-center py-10">Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-center py-10 text-red-500">Error: {error}</div>;
   }
 
   return (
@@ -48,7 +61,7 @@ function Course() {
             <p className="col-span-4 text-center py-10">No books available</p>
           ) : (
             book.map((item) => (
-              <Cards key={item.id} item={item} />
+              <Cards key={item._id} item={item} />
             ))
           )}
         </div>

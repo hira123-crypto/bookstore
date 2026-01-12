@@ -1,34 +1,161 @@
 [
   {
-    "id": "1",
-    "name": "storybook",
-    "title": "The Complete Storybook Guide",
-    "price": "00",
+    "_id": "1",
+    "name": "react-basics",
+    "title": "React Fundamentals",
+    "author": "React Team",
+    "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/bookshelf-books-library-isolated_1284-41020.jpg"
+    "image": "https://img.freepik.com/free-vector/programming-books-illustration_1284-41130.jpg",
+    "description": "Learn React from scratch with practical examples",
+    "downloadUrl": "https://www.syncfusion.com/succinctly-free-ebooks/reactjs-succinctly"
   },
   {
-    "id": "2",
-    "name": "react-guide",
-    "title": "Mastering ReactJS",
-    "price": "10",
+    "_id": "2",
+    "name": "javascript-guide",
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/programming-books-illustration_1284-41130.jpg"
+    "image": "https://img.freepik.com/free-vector/javascript-frameworks-concept-illustration_114360-743.jpg",
+    "description": "A modern introduction to JavaScript programming",
+    "downloadUrl": "https://eloquentjavascript.net/Eloquent_JavaScript.pdf"
   },
   {
-    "id": "3",
+    "_id": "3",
     "name": "nodejs-handbook",
-    "title": "NodeJS Handbook",
-    "price": "15",
+    "title": "Node.js Handbook",
+    "author": "Flavio Copes",
+    "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/learning-technology-concept-illustration_114360-4011.jpg"
+    "image": "https://img.freepik.com/free-vector/learning-technology-concept-illustration_114360-4011.jpg",
+    "description": "Complete guide to Node.js development",
+    "downloadUrl": "https://www.freecodecamp.org/news/content/images/2019/11/node-handbook.pdf"
   },
   {
-    "id": "4",
-    "name": "css-tricks",
-    "title": "CSS Tips & Tricks",
-    "price": "0",
+    "_id": "4",
+    "name": "typescript-mastery",
+    "title": "TypeScript Mastery",
+    "author": "Basarat Ali Syed",
+    "price": 35,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg",
+    "description": "Advanced TypeScript patterns and best practices"
+  },
+  {
+    "_id": "5",
+    "name": "python-basics",
+    "title": "Python for Everybody",
+    "author": "Charles Severance",
+    "price": 0,
     "category": "Free",
-    "image": "https://img.freepik.com/free-vector/stack-books-isolated_1284-41019.jpg"
+    "image": "https://img.freepik.com/free-vector/python-programming-concept-illustration_114360-8956.jpg",
+    "description": "Learn Python programming from basics to advanced",
+    "downloadUrl": "https://www.py4e.com/book.pdf"
+  },
+  {
+    "_id": "6",
+    "name": "mongodb-guide",
+    "title": "MongoDB Complete Guide",
+    "author": "Emily Davis",
+    "price": 28,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/nosql-concept-illustration_114360-3425.jpg",
+    "description": "Master NoSQL database design with MongoDB"
+  },
+  {
+    "_id": "7",
+    "name": "css-tricks",
+    "title": "HTML & CSS Guide",
+    "author": "Jon Duckett",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/stack-books-isolated_1284-41019.jpg",
+    "description": "Modern CSS techniques for responsive design",
+    "downloadUrl": "https://wtf.tw/ref/duckett.pdf"
+  },
+  {
+    "_id": "8",
+    "name": "docker-kubernetes",
+    "title": "Docker & Kubernetes",
+    "author": "Chris Anderson",
+    "price": 40,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/cloud-computing-concept-illustration_114360-1607.jpg",
+    "description": "Container orchestration and deployment strategies"
+  },
+  {
+    "_id": "9",
+    "name": "git-basics",
+    "title": "Pro Git Book",
+    "author": "Scott Chacon",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/version-control-concept-illustration_114360-4014.jpg",
+    "description": "The complete Pro Git book - master version control",
+    "downloadUrl": "https://github.com/progit/progit2/releases/download/2.1.360/progit.pdf"
+  },
+  {
+    "_id": "10",
+    "name": "aws-cloud",
+    "title": "AWS Cloud Practitioner",
+    "author": "Tom Wilson",
+    "price": 45,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/cloud-services-concept-illustration_114360-2567.jpg",
+    "description": "AWS certification preparation and cloud fundamentals"
+  },
+  {
+    "_id": "11",
+    "name": "sql-basics",
+    "title": "SQL Tutorial",
+    "author": "W3Schools",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/database-concept-illustration_114360-1969.jpg",
+    "description": "Master SQL database queries and design",
+    "downloadUrl": "https://goalkicker.com/SQLBook/SQLGotchas.pdf"
+  },
+  {
+    "_id": "12",
+    "name": "rest-api-design",
+    "title": "RESTful API Design",
+    "author": "Kevin Lee",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/api-interface-concept-illustration_114360-2348.jpg",
+    "description": "Design scalable and maintainable REST APIs",
+    "downloadUrl": "https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf"
+  },
+  {
+    "_id": "13",
+    "name": "system-design",
+    "title": "System Design Interview",
+    "author": "Alex Xu",
+    "price": 50,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/system-architecture-illustration_114360-5678.jpg",
+    "description": "Crack system design interviews at top tech companies"
+  },
+  {
+    "_id": "14",
+    "name": "linux-basics",
+    "title": "Linux Command Line",
+    "author": "William Shotts",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/linux-concept-illustration_114360-8901.jpg",
+    "description": "Master Linux command line and bash scripting",
+    "downloadUrl": "https://sourceforge.net/projects/linuxcommand/files/TLCL/19.01/TLCL-19.01.pdf/download"
+  },
+  {
+    "_id": "15",
+    "name": "advanced-algorithms",
+    "title": "Advanced Algorithms",
+    "author": "Robert Chen",
+    "price": 42,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/algorithm-concept-illustration_114360-1234.jpg",
+    "description": "Data structures and algorithm optimization techniques"
   }
 ]

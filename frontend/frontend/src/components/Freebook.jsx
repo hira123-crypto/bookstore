@@ -1,26 +1,32 @@
 import React, { useEffect, useState } from "react";
-
-
 import Slider from "react-slick";
-
 import Cards from "./Cards";
 
 function Freebook() {
   const [book, setBook] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await fetch('/list.json');
+        // ✅ Change this to your backend API endpoint
+        const res = await fetch('http://localhost:4001/book');
+        
+        if (!res.ok) {
+          throw new Error('Failed to fetch books');
+        }
+        
         const data = await res.json();
         
+        // Filter only free books
         const freeBooks = data.filter((item) => item.category === "Free");
         console.log("Free books:", freeBooks);
         setBook(freeBooks);
         setLoading(false);
       } catch (error) {
-        console.log(error);
+        console.log("Error:", error);
+        setError(error.message);
         setLoading(false);
       }
     };
@@ -66,6 +72,10 @@ function Freebook() {
     return <div className="text-center py-10">Loading...</div>;
   }
 
+  if (error) {
+    return <div className="text-center py-10 text-red-500">Error: {error}</div>;
+  }
+
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 py-10">
@@ -82,7 +92,7 @@ function Freebook() {
           ) : (
             <Slider {...settings}>
               {book.map((item) => (
-                <Cards item={item} key={item.id} />
+                <Cards item={item} key={item._id} />
               ))}
             </Slider>
           )}
